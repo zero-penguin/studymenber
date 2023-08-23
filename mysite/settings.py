@@ -55,7 +55,8 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 各ディレクトリの直下のテンプレートに設定する。
+        'DIRS': ['templates']
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
