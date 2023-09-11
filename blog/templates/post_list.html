@@ -1,11 +1,39 @@
-<div>
-  <h1><a href="/">Django  Girls Blog</a></h1>
-</div>
+{% extends './base.html' %}
 
+{% block content %}
+
+<form method="get" action="{% url 'post_list' %}">
+  <label>生徒名か学校名を入れて検索:</label>
+  <input type="text" name="q" value="{{ search_query }}">
+  <input type="submit" value="検索">
+</form>
+
+<form method="get" action="{% url 'post_list' %}">
+  <label>通塾時間で絞り込み:</label>
+  <select name="studyday_type_filter">
+    <option value="">すべて</option>  <!-- フィルターを解除するためのオプション -->
+    {% for choice in studyday_type_choices %}
+      <option value="{{ choice.0 }}" {% if choice.0 == selected_studyday_type %}selected{% endif %}>
+        {{ choice.1 }}
+      </option>
+    {% endfor %}
+  </select>
+  <input type="submit" value="絞り込み！">
+</form>
+
+{% if error %}
+  <dic class="errorMessage">{{error}}</dic>
+{% endif%}
 {% for post in posts %}
-  <div>
+  <div class='post-container'>
       <p>published: {{ post.published_date }}</p>
-      <h2><a href="">{{ post.title }}</a></h2>
-      <p>{{ post.text|linebreaksbr }}</p>
+      <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+      <h2 class="post-name"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.name }}</a></h2>
+      <p class="post-school">{{ post.school }}</p>
+      <p class="post-studyday-type">{{ post.studyday_type }}</p>
+      ↓最新のコメント↓
+      <p class="recent-comment">{{ post.text|linebreaksbr }}</p>
   </div>
 {% endfor %}
+
+{% endblock %}

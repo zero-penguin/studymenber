@@ -1,0 +1,18 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<div class="app-title">
+  <h1><a href="/">CA美原's</a></h1>
+</div>
+
+<div class="air">
+  <div class="mainpage">
+    {% block content %}
+    {% endblock %}
+  </div>
+</div>
