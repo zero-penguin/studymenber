@@ -8,6 +8,13 @@ class ChoiceField(models.CharField):
         kwargs['max_length'] = 20  # max_length を追加
         super().__init__(*args, **kwargs, choices=choices)
 
+# 記録のためのリレーションモデル
+class Comment(models.Model):
+    content = models.TextField()
+
+    def __str__(self):
+        return self.content
+    
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
@@ -25,7 +32,7 @@ class Post(models.Model):
         ('土曜１３時', '土曜１３時'),
         ('土曜１４時', '土曜１４時'),
     ])
-    text = models.TextField()
+    comment = models.ForeignKey(Comment, on_delete=models.CASCADE,blank=True,null=True)
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):

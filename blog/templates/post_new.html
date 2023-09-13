@@ -1,0 +1,9 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <h2>コメントの更新</h2>
+    <form method="POST" class="new-post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

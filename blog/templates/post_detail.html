@@ -7,9 +7,12 @@
         {{ post.published_date }}
       </div>
     {% endif %}
-    <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+    {% if post.images %}
+        <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     <h2 class="post-name">{{ post.name }}</h2>
     ↓最新のコメント↓
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p>{{ post.comment|linebreaksbr }}</p>
   </div>
 {% endblock %}
