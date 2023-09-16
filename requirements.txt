@@ -1,1 +1,5 @@
 Django~=3.2.10
+python~=3.11.3
+
+django_filters
+django_summernote
