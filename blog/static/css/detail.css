@@ -1,0 +1,58 @@
+/* ページ内のコンテナを中央寄せに配置 */
+.d-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff; /* 白色 */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* テキストのスタイル */
+.d-name {
+  font-size: 48px;
+  color: #333; /* 黒色 */
+  margin-top: 20px;
+}
+
+.d_ratest_comment {
+  font-size: 24px;
+  color: #333; /* 黒色 */
+  margin-top: 10px;
+  border: 5px solid #3498db; /* 青色のボーダー */
+  padding: 10px; /* テキストからボーダーまでの間隔を設定 */
+  border-radius: 5px; /* 角丸の設定 */
+}
+
+.d_comments {
+  font-size: 16px;
+  color: #333; /* 黒色 */
+  margin-top: 10px;
+  border: 2px solid #000000; /* 青色のボーダー */
+  padding: 10px; /* テキストからボーダーまでの間隔を設定 */
+  border-radius: 5px; /* 角丸の設定 */
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* グリフィコンのスタイル */
+.glyphicon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* ノーコメントのスタイル */
+h3 {
+  color: #ccc; /* グレー色 */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* リンクホバー時のスタイル */
+a:hover {
+  color: #555; /* ダークグレー色 */
+}

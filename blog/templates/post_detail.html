@@ -1,7 +1,13 @@
 {% extends './base.html' %}
 
 {% block content %}
-  <div class='post-container'>
+
+<h3><a class="back-button" href="{% url 'post_list' %}">生徒一覧に戻る<br><span class="glyphicon glyphicon-cloud"></span></a></h3>
+
+<div class="air2">
+</div>
+
+  <div class='d-container'>
     {% if post.published_date %}
       <div>
         {{ post.published_date }}
@@ -11,8 +17,32 @@
         <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
     {% endif %}
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    <h2 class="post-name">{{ post.name }}</h2>
+    <h2 class="d-name">{{ post.name }}</h2>
     ↓最新のコメント↓
-    <p>{{ post.comment|linebreaksbr }}</p>
+    {% if ratest_comment %}
+      {% if post.published_date %}
+        <div>
+          {{ ratest_comment.published_date }}
+        </div>
+      {% endif %}
+      <p class="d_ratest_comment">{{ ratest_comment|linebreaksbr }}</p>
+    {% else %}
+      <h3>No Comment</h3>
+    {% endif %}
+
+    ↓過去のコメント↓
+    {% for comment in comments %}
+      {% if forloop.counter <= 2 %}
+        {% if post.published_date %}
+          <div>
+            {{ comment.published_date }}
+          </div>
+        {% endif %}
+        <p class="d_comments">{{ comment|linebreaksbr }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="air">
   </div>
 {% endblock %}
