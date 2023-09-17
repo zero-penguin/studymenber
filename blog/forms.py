@@ -14,6 +14,6 @@ class CommentForm(forms.ModelForm):
         }
 
         widgets = {
-            'content': forms.Textarea(attrs={'class': 'rich-textarea'})
+            'content': forms.Textarea(attrs={'class': 'rich-textarea', 'maxlength': '100'})
         }
         
