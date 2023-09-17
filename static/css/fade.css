@@ -1,0 +1,4 @@
+/* 通常のコンテンツのスタイル */
+.normal-content {
+  display: none; /* 初期状態は非表示に設定 */
+}

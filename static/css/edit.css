@@ -1,0 +1,13 @@
+.rich-textarea {
+  width: 50%;
+  height: 73%; /* テキストエリアの高さを設定 */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* 垂直方向のリサイズを有効にする */
+}
+
+
+
+
