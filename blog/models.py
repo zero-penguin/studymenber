@@ -39,7 +39,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='Comment')
-    content = models.TextField()
+    content = models.CharField(max_length=200)
     savepoint = models.CharField(      
         max_length=10,
         choices=[
@@ -171,6 +171,18 @@ class Comment(models.Model):
         ]
     )
 
+    published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.content
+
+class Slide(models.Model):
+    contact = models.TextField()
+    image = models.ImageField(upload_to="contact_image")  # 画像データを保存するフィールド
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):

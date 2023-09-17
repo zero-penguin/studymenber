@@ -3,6 +3,8 @@ body {
   background-color: #f0f5f5;
   text-align: center; /* テキストを中央揃えに */
   font-family: Arial, sans-serif; /* フォントを設定 */
+  opacity: 0; /* 初期状態は透明に設定 */
+  transition: opacity 2s ease; /* opacityプロパティにトランジションを設定 */
 }
 
 .app-title {
@@ -19,6 +21,20 @@ body {
 
 .air2 {
   height: 80px;
+}
+
+/* スライドのスタイル */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .post-container {
