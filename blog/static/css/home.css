@@ -1,6 +1,6 @@
 /* カスタムCSSスタイル */
 body {
-  background-image: url('https://i.pinimg.com/originals/01/fe/a2/01fea2ea08de40ab93e9afd6ade4ff2d.gif');
+  background-image: url("{% static 'image/anime river gif.gif' %}");
   background-size: 110% 110%; /* 幅と高さをパーセンテージで指定 */
   text-align: center; /* テキストを中央揃えに */
   font-family: Arial, sans-serif; /* フォントを設定 */
