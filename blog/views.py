@@ -72,10 +72,10 @@ def post_list(request):
 
     else:
         search_query = ""
-        posts = Post.objects.all()
+        posts = []
 
         if not posts:
-            error = "誰も居ませんでした"
+            error = "<img src='../static/image/work/attention.png' width='80%'>"
 
     
     

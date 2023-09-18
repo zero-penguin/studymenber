@@ -4,7 +4,7 @@
 
 <form method="get" action="{% url 'post_list' %}">
   <label>生徒名か学校名を入れて検索:</label>
-  <input type="text" name="q" value="{{ search_query }}">
+  <input type="text" name="q" value="{{ search_query | default:'山田太郎 ヤマダタロウ'}}">
   <input type="submit" value="検索">
 </form>
 
@@ -23,7 +23,7 @@
 
 
 {% if error %}
-  <div class="errorMessage"><h1>{{error}}</h1></div>
+  <div class="errorMessage">{{error | safe}}</div>
 {% endif%}
 
 {% for post in posts %}

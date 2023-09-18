@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- フォント設定のため -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
   <link rel="stylesheet" href="{% static 'css/detail.css' %}">
   <link rel="stylesheet" href="{% static 'css/edit.css' %}">
@@ -17,16 +19,17 @@
   <div class="normal-content">
 
     <div class="app-title">
-      <h1>CA美原's</h1>
+      <img src="{% static 'image/logo/title.png' %}">
+    </div>
+  
+    <div class="air2">
+
     </div>
 
     <!-- ローディング画面のコンテナ -->
     <div id="loading-container">
       <!-- ロゴやテキストなどのコンテンツをここに追加 -->
-      <img id="loading-image" src="{% static 'image/logo/barbershop.png' %}" alt="Loading..."> <!-- 回転する画像を追加 -->
-    </div>
-
-    <div class="air">
+      <img id="loading-image" src="{% static 'image/logo/lodingSircle.png' %}" alt="Loading..."> <!-- 回転する画像を追加 -->
     </div>
     
       <div class="mainpage">

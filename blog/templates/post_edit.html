@@ -2,15 +2,15 @@
 
 {% block content %}
 
-<h3><a class="back-button" href="{% url 'post_list' %}">生徒一覧に戻る<br><span class="glyphicon glyphicon-cloud"></span></a></h3>
-
-<div class="air2">
-</div>
-
     <form method="POST" class="post-form">{% csrf_token %}
-        <h2>今日のコメント</h2>
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
+
+    <div class="air2">
+
+    </div>
+    
+    <h3><a class="back-button" href="{% url 'post_list' %}">生徒一覧に戻る<br><span class="glyphicon glyphicon-cloud"></span></a></h3>
 
 {% endblock %}

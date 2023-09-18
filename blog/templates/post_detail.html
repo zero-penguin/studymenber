@@ -18,7 +18,7 @@
     {% endif %}
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     <h2 class="d-name">{{ post.name }}</h2>
-    ↓最新のコメント↓
+
     {% if ratest_comment %}
       {% if post.published_date %}
         <div>
@@ -30,7 +30,7 @@
       <h3>No Comment</h3>
     {% endif %}
 
-    ↓過去のコメント↓
+
     {% for comment in comments %}
       {% if forloop.counter <= 2 %}
         {% if post.published_date %}

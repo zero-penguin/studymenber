@@ -1,6 +1,7 @@
 /* カスタムCSSスタイル */
 body {
-  background-color: #f0f5f5;
+  background-image: url('https://i.pinimg.com/originals/01/fe/a2/01fea2ea08de40ab93e9afd6ade4ff2d.gif');
+  background-size: 110% 110%; /* 幅と高さをパーセンテージで指定 */
   text-align: center; /* テキストを中央揃えに */
   font-family: Arial, sans-serif; /* フォントを設定 */
   opacity: 0; /* 初期状態は透明に設定 */
@@ -8,11 +9,16 @@ body {
 }
 
 .app-title {
-  color: #428bca;
+  color: #31ddff;
   text-decoration: none;
-  display: block;
-  margin-top: 100px; /* タイトルの上部のマージンを設定 */
-  font-size: 128px; /* タイトルのフォントサイズを設定 */
+  display: block; 
+  font-size: 48px; /* タイトルのフォントサイズを設定 */
+  margin: 20px auto; 
+}
+
+.back-button {
+  color:rgb(0, 0, 0);
+  font-size: 24px;
 }
 
 .air {
@@ -45,6 +51,12 @@ body {
   border-radius: 10px; /* ボーダーの角を丸くする */
   max-width: 600px; /* ポストの最大幅を設定 */
   box-shadow: 0px 0px 5px #888888; /* 影を追加 */
+}
+
+.errorMessage {
+  height:auto;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .post-name {
