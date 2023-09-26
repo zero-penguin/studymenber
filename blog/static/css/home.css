@@ -1,6 +1,7 @@
 /* カスタムCSSスタイル */
 body {
-  background-image: url("{% static 'image/anime river gif.gif' %}");
+  /* background-image: url('../image/anime-river-gif.gif'); */
+  background-color: #d5eff8;
   background-size: 110% 110%; /* 幅と高さをパーセンテージで指定 */
   text-align: center; /* テキストを中央揃えに */
   font-family: Arial, sans-serif; /* フォントを設定 */
@@ -29,7 +30,7 @@ body {
   height: 80px;
 }
 
-/* スライドのスタイル */
+/* スライドのスタイル
 .slideshow-container {
   position: relative;
   max-width: 100%;
@@ -41,15 +42,23 @@ body {
   width: 100%;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+} */
+
+.post-container-wrapper {
+  display: flex; /* Flexboxを適用 */
+  overflow-x: auto; /* 横方向のスクロールを有効にする */
 }
 
 .post-container {
   background-color: #ffffff;
   padding: 20px;
-  margin: 20px auto; /* 水平方向に中央揃えに */
+  /* 固定幅の代わりに、フレキシブルな幅を設定 */
+  flex: 0 0 auto; /* 横幅の自動計算 */
+  max-width: 300px; /* 最大幅を設定 */
+  margin-right: 10px; /* 余白を設定 */
+  margin: 20px 20px; /* 水平方向に中央揃えに */
   border: 5px solid #01111f; /* 青い縁を設定 */
   border-radius: 10px; /* ボーダーの角を丸くする */
-  max-width: 600px; /* ポストの最大幅を設定 */
   box-shadow: 0px 0px 5px #888888; /* 影を追加 */
 }
 

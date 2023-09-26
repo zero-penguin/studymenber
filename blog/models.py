@@ -5,27 +5,28 @@ from django.utils import timezone
 class ChoiceField(models.CharField):
     def __init__(self, *args, **kwargs):
         choices = kwargs.pop('choices')
-        kwargs['max_length'] = 20  # max_length を追加
+        kwargs['max_length'] = 100  # max_length を追加
         super().__init__(*args, **kwargs, choices=choices)
         
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
+    katakana = models.CharField(max_length=200)
     school = models.CharField(max_length=20)
     images = models.ImageField(upload_to="member_face")
     studyday_type = models.CharField(
-        max_length=10,
+        max_length=100,
         choices=[
-            ('火曜１７時', '火曜１７時'),
-            ('火曜１８時', '火曜１８時'),
-            ('水曜１７時', '水曜１７時'),
-            ('水曜１８時', '水曜１８時'),
-            ('金曜１７時', '金曜１７時'),
-            ('金曜１８時', '金曜１８時'),
-            ('土曜１０時', '土曜１０時'),
-            ('土曜１１時', '土曜１１時'),
-            ('土曜１３時', '土曜１３時'),
-            ('土曜１４時', '土曜１４時'),
+        ('Tuesday 17:00', 'Tuesday 17:00'),
+        ('Tuesday 18:00', 'Tuesday 18:00'),
+        ('Wednesday 17:00', 'Wednesday 17:00'),
+        ('Wednesday 18:00', 'Wednesday 18:00'),
+        ('Friday 17:00', 'Friday 17:00'),
+        ('Friday 18:00', 'Friday 18:00'),
+        ('Saturday 10:00', 'Saturday 10:00'),
+        ('Saturday 11:00', 'Saturday 11:00'),
+        ('Saturday 13:00', 'Saturday 13:00'),
+        ('Saturday 14:00', 'Saturday 14:00'),
         ]
     )
     published_date = models.DateTimeField(blank=True, null=True)
@@ -45,7 +46,8 @@ class Comment(models.Model):
         choices=[
             ('not save', 'not save'),
             ('save', 'save'),
-        ]
+        ],
+        default="not save",
     )
     stage = models.CharField(
         max_length=10,

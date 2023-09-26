@@ -19,16 +19,16 @@ def post_list(request):
 
     # 学習日タイプの選択肢
     studyday_type_choices = [
-        ('火曜１７時', '火曜１７時'),
-        ('火曜１８時', '火曜１８時'),
-        ('水曜１７時', '水曜１７時'),
-        ('水曜１８時', '水曜１８時'),
-        ('金曜１７時', '金曜１７時'),
-        ('金曜１８時', '金曜１８時'),
-        ('土曜１０時', '土曜１０時'),
-        ('土曜１１時', '土曜１１時'),
-        ('土曜１３時', '土曜１３時'),
-        ('土曜１４時', '土曜１４時'),
+        ('Tuesday 17:00', 'Tuesday 17:00'),
+        ('Tuesday 18:00', 'Tuesday 18:00'),
+        ('Wednesday 17:00', 'Wednesday 17:00'),
+        ('Wednesday 18:00', 'Wednesday 18:00'),
+        ('Friday 17:00', 'Friday 17:00'),
+        ('Friday 18:00', 'Friday 18:00'),
+        ('Saturday 10:00', 'Saturday 10:00'),
+        ('Saturday 11:00', 'Saturday 11:00'),
+        ('Saturday 13:00', 'Saturday 13:00'),
+        ('Saturday 14:00', 'Saturday 14:00'),
     ]
 
     if sort_by == 'studyday_type':
@@ -49,7 +49,8 @@ def post_list(request):
     if search_query and selected_studyday_type:
         posts = sorted_posts.filter(
             Q(name__icontains=search_query) |  # 名前で部分一致検索
-            Q(school__icontains=search_query)  # 学校で部分一致検索
+            Q(school__icontains=search_query) | # 学校で部分一致検索
+            Q(katakana__icontains=search_query) # カタカナで部分一致
         )
         if not posts:
             error = "誰も居ませんでした"
@@ -57,7 +58,8 @@ def post_list(request):
     elif search_query and not selected_studyday_type:
         posts = posts.filter(
             Q(name__icontains=search_query) |  # 名前で部分一致検索
-            Q(school__icontains=search_query)  # 学校で部分一致検索
+            Q(school__icontains=search_query) |  # 学校で部分一致検索
+            Q(katakana__icontains=search_query) # カタカナで部分一致
         )
         if not posts:
             error = "誰も居ませんでした"

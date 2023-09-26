@@ -3,5 +3,5 @@ from .models import Post,Comment
 
 @admin.register(Post)
 class MyModelAdmin(admin.ModelAdmin):
-    fields = ('author', 'name','school','images','studyday_type','published_date')
-    list_display = ('author', 'name','school','images','studyday_type','published_date')
+    fields = ('author', 'name','katakana','school','images','studyday_type','published_date')
+    list_display = ('author', 'name','katakana','school','images','studyday_type','published_date')

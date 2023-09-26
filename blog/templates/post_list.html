@@ -3,13 +3,13 @@
 {% block content %}
 
 <form method="get" action="{% url 'post_list' %}">
-  <label>生徒名か学校名を入れて検索:</label>
-  <input type="text" name="q" value="{{ search_query | default:'山田太郎 ヤマダタロウ'}}">
+  <label>生徒名(漢字orカタカナ)か学校名を入れて検索:</label><br>
+  <input type="text" name="q" value="{{ search_query | default:''}}">
   <input type="submit" value="検索">
 </form>
 
 <form method="get" action="{% url 'post_list' %}">
-  <label>通塾時間で絞り込み:</label>
+  <label>通塾時間で絞り込み:</label><br>
   <select name="studyday_type_filter">
     <option value="">すべて</option>  <!-- フィルターを解除するためのオプション -->
     {% for choice in studyday_type_choices %}
@@ -26,8 +26,9 @@
   <div class="errorMessage">{{error | safe}}</div>
 {% endif%}
 
+<div class="post-container-wrapper">
 {% for post in posts %}
-
+  
   <div class='post-container'>
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">記録する<br><span class="glyphicon glyphicon-pencil"></span></a>
       <p>published: {{ post.published_date }}</p>
@@ -59,5 +60,6 @@
   </div>
 
 {% endfor %}
+</div>
 
 {% endblock %}
