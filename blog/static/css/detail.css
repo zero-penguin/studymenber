@@ -47,14 +47,12 @@ img {
 
 /* ノーコメントのスタイル */
 h3 {
-  color: #cccccc; /* グレー色 */
+  color: #ccc; /* グレー色 */
   margin-top: 10px;
   text-align: center;
 }
 
-
-
 /* リンクホバー時のスタイル */
 a:hover {
-  color: #f6e129; /* ダークグレー色 */
+  color: #555; /* ダークグレー色 */
 }
