@@ -73,7 +73,7 @@
 <!-- 生徒用のページ -->
 
 {% else %}
-　
+
   {% for post in posts %}
     {% if request.user.username == post.userid %}
       {{post.name}}
