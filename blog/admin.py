@@ -3,8 +3,8 @@ from .models import Post,Comment,Account
 
 @admin.register(Post)
 class MyModelAdmin(admin.ModelAdmin):
-    fields = ('author', 'name','katakana','school','images','studyday_type','published_date')
-    list_display = ('author', 'name','katakana','school','images','studyday_type','published_date')
+    fields = ('author', 'userid','name','katakana','school','images','studyday_type','published_date')
+    list_display = ('author','userid','name','katakana','school','images','studyday_type','published_date')
 
 admin.site.register(Comment)
 admin.site.register(Account)

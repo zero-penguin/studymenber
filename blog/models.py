@@ -26,6 +26,7 @@ class Account(models.Model):
        
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    userid = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
     katakana = models.CharField(max_length=200)
     school = models.CharField(max_length=20)

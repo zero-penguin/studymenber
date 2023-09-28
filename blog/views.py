@@ -50,6 +50,7 @@ def Logout(request):
     # ログイン画面遷移
     return HttpResponseRedirect(reverse('Login'))
 
+
 class  AccountRegistration(TemplateView):
 
     def __init__(self):
@@ -93,11 +94,9 @@ class  AccountRegistration(TemplateView):
             # フォームが有効でない場合
             print(self.params["account_form"].errors)
 
-        return render(request,"register.html",context=self.params)
+        return render(request,"login.html",context=self.params)
 
-# ↓は通常の画面 
-
-@login_required  
+# ↓は通常の画面   
 def post_list(request):
 
     posts = Post.objects.all()
@@ -184,14 +183,12 @@ def post_list(request):
         'current_time': current_time,  # 現在の日時をコンテキストに追加
         })
 
-@login_required
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = Comment.objects.filter(post_id=pk).order_by('-id')[1:]
     ratest_comment = Comment.objects.filter(post_id=pk).last()
     return render(request, 'post_detail.html', {'post': post,'comments': comments,'ratest_comment':ratest_comment})
 
-@login_required
 def post_new(request):
     if request.method == "POST":
         form = CommentForm(request.POST)
@@ -205,7 +202,6 @@ def post_new(request):
         form = CommentForm()
     return render(request, 'post_new.html', {'form': form})
 
-@login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     

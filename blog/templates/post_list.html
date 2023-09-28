@@ -5,68 +5,82 @@
 <h1>{{ request.user.username }}さんようこそ！！</h1>
 
 <div class="air2">
-  
+
 </div>
 
-<form method="get" action="{% url 'post_list' %}">
-  <label>生徒名(漢字orカタカナ)か学校名を入れて検索:</label><br>
-  <input type="text" name="q" value="{{ search_query | default:''}}">
-  <input type="submit" value="検索">
-</form>
+<!-- 先生用のページの表示 -->
+{% if request.user.username == "camiharakou1" %}
+  <form method="get" action="{% url 'post_list' %}">
+    <label>生徒名(漢字orカタカナ)か学校名を入れて検索:</label><br>
+    <input type="text" name="q" value="{{ search_query | default:''}}">
+    <input type="submit" value="検索">
+  </form>
 
-<form method="get" action="{% url 'post_list' %}">
-  <label>通塾時間で絞り込み:</label><br>
-  <select name="studyday_type_filter">
-    <option value="">すべて</option>  <!-- フィルターを解除するためのオプション -->
-    {% for choice in studyday_type_choices %}
-      <option value="{{ choice.0 }}" {% if choice.0 == selected_studyday_type %}selected{% endif %}>
-        {{ choice.1 }}
-      </option>
-    {% endfor %}
-  </select>
-  <input type="submit" value="絞り込み！">
-</form>
-
-
-{% if error %}
-  <div class="errorMessage">{{error | safe}}</div>
-{% endif%}
-
-<div class="post-container-wrapper">
-{% for post in posts %}
-  
-  <div class='post-container'>
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">記録する<br><span class="glyphicon glyphicon-pencil"></span></a>
-      <p>published: {{ post.published_date }}</p>
-      {% if post.images %}
-        <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
-      {% endif %}
-      <h2 class="post-name"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.name }}</a></h2>
-      <p class="post-school">{{ post.school }}</p>
-      <p class="post-studyday-type">{{ post.studyday_type }}</p>
-      <p class="comment-stage">{{comment}}</p>
-      {% for comment in comments %}
-        {% if comment.post_id == post.id %}
-          <!-- 一週間前までのコメントは表示されるようにした -->
-          {% if comment.published_date > current_time %}
-            <div class="until-week-comment">
-              {{comment.published_date}}
-              <p class="comment-stage">{{comment.stage}}</p>
-            <h2>{{comment}}</h2>
-            </div>
-            {% if comment.savepoint == "save" %}
-              <p class="highlight">ステージが保存されています!</p>
-            {% endif %}
-          {% else %}
-            
-          {% endif %}
-        {% endif %}
+  <form method="get" action="{% url 'post_list' %}">
+    <label>通塾時間で絞り込み:</label><br>
+    <select name="studyday_type_filter">
+      <option value="">すべて</option>  <!-- フィルターを解除するためのオプション -->
+      {% for choice in studyday_type_choices %}
+        <option value="{{ choice.0 }}" {% if choice.0 == selected_studyday_type %}selected{% endif %}>
+          {{ choice.1 }}
+        </option>
       {% endfor %}
+    </select>
+    <input type="submit" value="絞り込み！">
+  </form>
+
+
+  {% if error %}
+    <div class="errorMessage">{{error | safe}}</div>
+  {% endif%}
+
+  <div class="post-container-wrapper">
+  {% for post in posts %}
     
+    <div class='post-container'>
+      <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">記録する<br><span class="glyphicon glyphicon-pencil"></span></a>
+        <p>published: {{ post.published_date }}</p>
+        {% if post.images %}
+          <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+        {% endif %}
+        <h2 class="post-name"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.name }}</a></h2>
+        <p class="post-school">{{ post.school }}</p>
+        <p class="post-studyday-type">{{ post.studyday_type }}</p>
+        <p class="comment-stage">{{comment}}</p>
+        {% for comment in comments %}
+          {% if comment.post_id == post.id %}
+            <!-- 一週間前までのコメントは表示されるようにした -->
+            {% if comment.published_date > current_time %}
+              <div class="until-week-comment">
+                {{comment.published_date}}
+                <p class="comment-stage">{{comment.stage}}</p>
+              <h2>{{comment}}</h2>
+              </div>
+              {% if comment.savepoint == "save" %}
+                <p class="highlight">ステージが保存されています!</p>
+              {% endif %}
+            {% else %}
+              
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      
+    </div>
+
+  {% endfor %}
   </div>
 
-{% endfor %}
-</div>
+<!-- 生徒用のページ -->
+
+{% else %}
+
+  {% for post in posts %}
+    {% if request.user.username == post.userid %}
+      {{post.name}}
+    {% endif %}
+  {% endfor %}
+
+{% endif %}
 
 <p> ログアウトは
   <a href="{% url 'Logout' %}">こちら</a>

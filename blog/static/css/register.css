@@ -10,7 +10,7 @@ table.reg_form{
   padding-left:20px;
 }
 
-.btn{
+.btn_submit{
     color: #fff;
     background-color: #000033;
     font-size: 1.0em;
@@ -18,7 +18,7 @@ table.reg_form{
     margin-left: 80%;
 }
 
-.btn:hover{
+.btn_submit:hover{
   color: #fff;
   background: #000099;
 }
