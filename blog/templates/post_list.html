@@ -2,6 +2,12 @@
 
 {% block content %}
 
+<h1>{{ request.user.username }}さんようこそ！！</h1>
+
+<div class="air2">
+  
+</div>
+
 <form method="get" action="{% url 'post_list' %}">
   <label>生徒名(漢字orカタカナ)か学校名を入れて検索:</label><br>
   <input type="text" name="q" value="{{ search_query | default:''}}">
@@ -61,5 +67,9 @@
 
 {% endfor %}
 </div>
+
+<p> ログアウトは
+  <a href="{% url 'Logout' %}">こちら</a>
+</p>
 
 {% endblock %}

@@ -1,5 +1,7 @@
 from django.conf import settings
 from django.db import models
+#ユーザー認証
+from django.contrib.auth.models import User
 from django.utils import timezone
 
 class ChoiceField(models.CharField):
@@ -7,7 +9,21 @@ class ChoiceField(models.CharField):
         choices = kwargs.pop('choices')
         kwargs['max_length'] = 100  # max_length を追加
         super().__init__(*args, **kwargs, choices=choices)
-        
+
+ 
+# ユーザーアカウントのモデルクラス
+class Account(models.Model):
+
+    # ユーザー認証のインスタンス(1vs1関係)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+    # 追加フィールド
+    last_name = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.user.username
+       
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
