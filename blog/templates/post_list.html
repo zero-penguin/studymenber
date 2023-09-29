@@ -20,7 +20,7 @@
   <form method="get" action="{% url 'post_list' %}">
     <label>通塾時間で絞り込み:</label><br>
     <select name="studyday_type_filter">
-      <option value="">すべて</option>  <!-- フィルターを解除するためのオプション -->
+      <option value="">home</option>  <!-- フィルターを解除するためのオプション -->
       {% for choice in studyday_type_choices %}
         <option value="{{ choice.0 }}" {% if choice.0 == selected_studyday_type %}selected{% endif %}>
           {{ choice.1 }}
