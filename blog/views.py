@@ -109,7 +109,7 @@ def post_list(request):
     sort_by = request.GET.get('sort_by', 'studyday_type')
     selected_studyday_type = request.GET.get('studyday_type_filter', '')  # 選択された学習日タイプを取得
     current_time = timezone.now()  # 現在の日時を取得
-    current_time = current_time - timedelta(seconds=50)
+    current_time = current_time - timedelta(days=7)
 
     # 学習日タイプの選択肢
     studyday_type_choices = [
