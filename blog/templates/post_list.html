@@ -2,8 +2,9 @@
 
 {% block content %}
 
-<h1>{{ request.user.username }}さんようこそ！！</h1>
-
+{% for post in user_profile %}
+  <h1>{{post.name}}さん、こんにちは！！</h1>
+{% endfor %}
 <div class="air2">
 
 </div>
@@ -74,10 +75,20 @@
 
 {% else %}
 
-  {% for post in posts %}
-    {% if request.user.username == post.userid %}
-      {{post.name}}
-    {% endif %}
+  {% for post in user_profile %}
+  <div class='post-container_for_student'>
+    <a class="btn btn-default" href="{% url 'change_day' pk=post.pk %}">通塾時間を変更する。<br><span class="glyphicon glyphicon-pencil"></span></a>
+      <div class="air2">
+
+      </div>
+      {% if post.images %}
+        <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+      {% endif %}
+      <h2 class="post-name">{{ post.name }}</h2>
+      <p class="post-school">{{ post.school }}</p>
+      <p class="post-studyday-type">{{ post.studyday_type }}</p>
+    
+  </div>
   {% endfor %}
 
 {% endif %}

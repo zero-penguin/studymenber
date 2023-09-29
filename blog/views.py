@@ -6,7 +6,7 @@ from django.db.models import Q
 
 #https://di-acc2.com/programming/python/2534/を参考に
 from django.views.generic import TemplateView # テンプレートタグ
-from .forms import CommentForm,AccountForm, AddAccountForm
+from .forms import CommentForm,AccountForm, AddAccountForm,ChangeDayForm
 # サインイン・ログインに必要なライブラリをDjangoからインポート
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
@@ -49,7 +49,6 @@ def Logout(request):
     logout(request)
     # ログイン画面遷移
     return HttpResponseRedirect(reverse('Login'))
-
 
 class  AccountRegistration(TemplateView):
 
@@ -97,11 +96,15 @@ class  AccountRegistration(TemplateView):
         return render(request,"login.html",context=self.params)
 
 # ↓は通常の画面   
+@login_required
 def post_list(request):
 
     posts = Post.objects.all()
     comments = Comment.objects.all().order_by('-id')
     error = ""
+    user = request.user.username
+    print(user)
+    user_profile = Post.objects.filter(userid=user)
     sorted_posts = []
     sort_by = request.GET.get('sort_by', 'studyday_type')
     selected_studyday_type = request.GET.get('studyday_type_filter', '')  # 選択された学習日タイプを取得
@@ -181,14 +184,17 @@ def post_list(request):
         'error': error,
         'comments':comments,
         'current_time': current_time,  # 現在の日時をコンテキストに追加
+        'user_profile': user_profile, #　生徒用のPost取得用
         })
 
+@login_required
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = Comment.objects.filter(post_id=pk).order_by('-id')[1:]
     ratest_comment = Comment.objects.filter(post_id=pk).last()
     return render(request, 'post_detail.html', {'post': post,'comments': comments,'ratest_comment':ratest_comment})
 
+@login_required
 def post_new(request):
     if request.method == "POST":
         form = CommentForm(request.POST)
@@ -202,6 +208,7 @@ def post_new(request):
         form = CommentForm()
     return render(request, 'post_new.html', {'form': form})
 
+@login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     
@@ -216,3 +223,20 @@ def post_edit(request, pk):
     else:
         form = CommentForm()
     return render(request, 'post_edit.html', {'form': form})
+
+@login_required
+# 通塾時間変更用view
+def change_day(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    
+    if request.method == 'POST':
+        form = ChangeDayForm(request.POST)
+        if form.is_valid():
+            studyday_type = form.cleaned_data['studyday_type']
+            post.studyday_type = studyday_type  # studyday_typeのみを変更
+            post.save()  # 保存
+            return redirect('post_list')
+    else:
+        form = ChangeDayForm()
+    
+    return render(request, 'change_day.html', {'form': form})

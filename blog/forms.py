@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
-from .models import Comment,Account
+from .models import Post,Comment,Account
 
 class AccountForm(forms.ModelForm):
     # パスワード入力：非表示対応
@@ -34,5 +34,15 @@ class CommentForm(forms.ModelForm):
 
         widgets = {
             'content': forms.Textarea(attrs={'class': 'rich-textarea', 'maxlength': '100'})
+        }
+        
+class ChangeDayForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        # 最新のコメント　編集可能に
+        fields = ('studyday_type',)
+        labels= {
+            'content':''
         }
         
