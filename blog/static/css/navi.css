@@ -1,0 +1,27 @@
+.navies nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(141, 238, 44);
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.navies ul {
+  display: flex;
+}
+.navies li {
+  list-style: none;
+} 
+.navies a{
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 35px;
+}
+
+.navies a:hover {
+  color: rgb(239, 241, 192);
+}

@@ -12,6 +12,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from typing import Final
 
 #ログイン
 def Login(request):
@@ -171,6 +172,7 @@ def post_list(request):
         posts = []
 
         if not posts:
+            # home画面の画像
             error = "<img src='../static/image/work/attention.png' width='80%'>"
 
     
@@ -194,24 +196,47 @@ def post_detail(request, pk):
     ratest_comment = Comment.objects.filter(post_id=pk).last()
     return render(request, 'post_detail.html', {'post': post,'comments': comments,'ratest_comment':ratest_comment})
 
-@login_required
-def post_new(request):
-    if request.method == "POST":
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.author = request.user
-            comment.published_date = timezone.now()
-            comment.save()
-            return redirect('post_list')
-    else:
-        form = CommentForm()
-    return render(request, 'post_new.html', {'form': form})
+# @login_required
+# def post_new(request):
+#     if request.method == "POST":
+#         form = CommentForm(request.POST)
+#         if form.is_valid():
+#             comment = form.save(commit=False)
+#             comment.author = request.user
+#             comment.published_date = timezone.now()
+#             comment.save()
+#             return redirect('post_list')
+#     else:
+#         form = CommentForm()
+#     return render(request, 'post_new.html', {'form': form})
+
+
+backurl = []  # 空のリストを作成
 
 @login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    
+
+    # request.META.get() で取得した値をリストに追加
+    backurl.append(request.META.get('HTTP_REFERER', 'post_list'))
+
+    largest_odd_index = -1  # 一番大きい偶数の順番を格納する変数
+    largest_odd_value = -1  # 一番大きい偶数の値を格納する変数
+
+    # バックURLリスト内の要素を順番に走査
+    for index, url in enumerate(backurl):
+        # URLの順番が偶数の場合かつ、現在の偶数が一番大きい場合
+        if index % 2 == 0 and index > largest_odd_index:
+            largest_odd_index = index
+            largest_odd_value = index
+
+    # 一番大きい偶数の順番を持つURLを取得
+    if largest_odd_index != -1:
+        largest_odd_url = backurl[largest_odd_index]
+        print("一番大きい偶数の順番のURL:", largest_odd_url)
+    else:
+        print("条件を満たすURLが見つかりませんでした。")
+        
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -219,10 +244,24 @@ def post_edit(request, pk):
             comment.post = post  # Postモデルと関連付け
             comment.published_date = timezone.now()
             comment.save()
-            return redirect('post_list')
+            
+            return redirect(largest_odd_url)
     else:
         form = CommentForm()
     return render(request, 'post_edit.html', {'form': form})
+
+# コメントの削除ボタン
+@login_required
+def comment_delete(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    # コメントの削除処理
+    if request.method == 'POST':
+        comment.delete()
+
+    # 削除後に戻るURLを取得し、リダイレクト
+    referer = request.META.get('HTTP_REFERER', 'post_list')
+    return redirect(referer)
 
 @login_required
 # 通塾時間変更用view

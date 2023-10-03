@@ -30,6 +30,7 @@ class Post(models.Model):
     name = models.CharField(max_length=200)
     katakana = models.CharField(max_length=200)
     school = models.CharField(max_length=20)
+    school_year = models.CharField(max_length=20)
     images = models.ImageField(upload_to="member_face")
     studyday_type = models.CharField(
         max_length=100,

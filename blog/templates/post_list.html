@@ -11,6 +11,20 @@
 
 <!-- 先生用のページの表示 -->
 {% if request.user.username == "camiharakou1" %}
+
+  <!-- トップバーの開始 -->
+  <div class="navies">  
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">サービス紹介</a></li>
+        <li><a href="#">最新情報</a></li>
+        <li><a href="#">ブログ</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <form method="get" action="{% url 'post_list' %}">
     <label>生徒名(漢字orカタカナ)か学校名を入れて検索:</label><br>
     <input type="text" name="q" value="{{ search_query | default:''}}">
@@ -46,6 +60,7 @@
         {% endif %}
         <h2 class="post-name"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.name }}</a></h2>
         <p class="post-school">{{ post.school }}</p>
+        <p class="post-school">{{ post.school_year }}</p>
         <p class="post-studyday-type">{{ post.studyday_type }}</p>
         <p class="comment-stage">{{comment}}</p>
         {% for comment in comments %}
@@ -56,13 +71,22 @@
                 {{comment.published_date}}
                 <p class="comment-stage">{{comment.stage}}</p>
               <h2>{{comment}}</h2>
+              <br>
+
+              <!-- 削除ボタンを追加 -->
+              <form method="post" action="{% url 'comment_delete' comment.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">削除</button>
+              </form>
               </div>
+
               {% if comment.savepoint == "save" %}
                 <p class="highlight">ステージが保存されています!</p>
               {% endif %}
             {% else %}
               
             {% endif %}
+
           {% endif %}
         {% endfor %}
       

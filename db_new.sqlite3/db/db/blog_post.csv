@@ -1,74 +1,74 @@
-ï»¿id,userid,name,katakana,school,images,studyday_type,published_date,author_id
-1,camihara4,ä¸Šé–“æ™ºå–œ,ã‚¦ã‚¨ãƒãƒˆãƒ¢ã‚­,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-2,camihara5,å‰æ‘å‹‡äºº,ãƒ¨ã‚·ãƒ ãƒ©ãƒ¦ã‚¦ãƒˆ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-3,camihara6,åŸé–“æ­£å“‰,ã‚·ãƒ­ãƒã‚·ãƒ§ã‚¦ãƒ¤,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-4,camihara7,é‡‘åŸæ¹Šéƒ½,ã‚­ãƒ³ã‚¸ãƒ§ã‚¦ãƒŸãƒŠãƒˆ,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Tuesday 18:00,,1
-5,camihara8,æµ¦å´æ”¿é“,ã‚¦ãƒ©ã‚µã‚­ãƒã‚µãƒŸãƒ,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-6,camihara9,å…¼ä¹…å°š,ã‚«ãƒã‚¯ãƒŠã‚ª,å®®é‡Œä¸­å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-7,camihara10,ä¸­æ‘å„ªæœˆ,ãƒŠã‚«ãƒ ãƒ©ãƒ¦ãƒ…ã‚­,ç¾é‡Œä¸­å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-8,camihara11,ä¸­æ‘å„ªæ,ãƒŠã‚«ãƒ ãƒ©ãƒ¦ã‚¦ã‚¢,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-9,camihara12,å±±åŸå¥ä»‹,ãƒ¤ãƒã‚·ãƒ­ã‚±ãƒ³ã‚¹ã‚±,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-10,camihara13,å¯Œç”°æ·³ä»,ãƒˆãƒŸã‚¿ã‚¢ãƒ„ãƒ’ãƒˆ,è¶Šæ¥å°å­¦æ ¡,member_face/barbershop.png,saturday 11:00,,1
-11,camihara14,å¯Œç”°ã•ãã‚‰,ãƒˆãƒŸã‚¿ã‚µã‚¯ãƒ©,è¶Šæ¥å°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-12,camihara15,å„€é–“å¦ƒéº»é‡Œ,ã‚®ãƒãƒ’ãƒãƒª,è¶Šæ¥å°å­¦æ ¡,member_face/barbershop.png,Tuesday 18:00,,1
-13,camihara16,å„€é–“ å’²æ˜¥,ã‚®ãƒã‚µã‚¯ãƒ©,èˆˆå—ä¸­å­¦æ ¡,member_face/barbershop.png,Tuesday 18:00,,1
-14,camihara17,æ–°å£ç¾æ„›,ã‚¢ãƒ©ã‚«ã‚­ãƒŸã‚¢,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-15,camihara18,æ–°å£ç¾æ¥,ã‚¢ãƒ©ã‚«ã‚­ãƒŸã‚¯,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-16,camihara19,å²³åŸæ˜Ÿé™½,ã‚ªã‚«ãƒãƒ© ã‚»ã‚¤ãƒ¨ã‚¦,ç¾é‡Œä¸­å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-17,camihara20,å¤§é¶´å²³,ã‚ªã‚ªãƒ„ãƒ«ã‚¬ã‚¯,æ²–ç¸„ã‚¢ãƒŸãƒ¼ã‚¯ã‚¹ã‚¤ãƒ³ã‚¿ãƒ¼ãƒŠã‚·ãƒ§ãƒŠãƒ«ä¸­å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-18,camihara21,é«˜æ±Ÿæ´²é¢¯æ˜Ÿ,ã‚¿ã‚«ã‚¨ã‚¹ãƒãƒ¤ã‚»,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-19,camihara22,ç‰åŸæ­¦å°š,ã‚¿ãƒã‚­ã‚¿ã‚±ãƒŠã‚ª,å˜‰æ‰‹ç´å°å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-20,camihara23,å®‰é‡Œå®Ÿç¾½å¶,ã‚¢ã‚µãƒˆãƒŸã‚¦ãƒˆ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-21,camihara24,å¹³æµå¤ªéƒ,ã‚¿ã‚¤ãƒ©ã‚±ã‚¤ã‚¿ãƒ­ã‚¦,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-22,camihara25,é«˜è‰¯ç››ç‰,ã‚¿ã‚«ãƒ©ã‚»ãƒ«,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-23,camihara26,ç”°å ´é™½å‘,ã‚¿ãƒãƒ’ãƒŠã‚¿,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-24,camihara27,å¹¸åœ°æ…ˆæ¸©,ã‚³ã‚¦ãƒã‚·ã‚ªãƒ³,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-25,camihara28,å¹¸åœ°ç æ„›,ã‚³ã‚¦ãƒã‚·ãƒ¥ãƒŠ,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-26,camihara29,ä¼Šä½æ‚ å¤,ã‚¤ã‚µãƒ¦ã‚¦ã‚«,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-27,camihara30,ä¼Šä½åƒç§‹,ã‚¤ã‚µãƒã‚¢ã‚­,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-28,camihara31,æ¯”å±‹æ ¹åºƒå¤§,ãƒ’ãƒ¤ãƒã‚³ã‚¦ãƒ€ã‚¤,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 18:00,,1
-29,camihara32,ç²Ÿå›½å„ªå¦ƒ,ã‚¢ã‚°ãƒ‹ãƒ¦ã‚¦ã‚­,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-30,camihara33,ç•¶çœæœ‰è²´,ãƒˆã‚¦ãƒãƒ¦ã‚¦ã‚­,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-31,camihara34,ç•¶çœå¤§è²´,ãƒˆã‚¦ãƒãƒ€ã‚¤ã‚­,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-32,camihara35,åŸé–“é¥éŸ³,ã‚·ãƒ­ãƒãƒãƒ«ãƒˆ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-33,camihara36,å¹³æ‚ å¥ˆ,ã‚¿ã‚¤ãƒ©ãƒ¦ãƒŠ,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-34,camihara37,é‡‘åŸå‡œãƒåŠ©,ã‚­ãƒ³ã‚¸ãƒ§ã‚¦ãƒªãƒ³ãƒã‚¹ã‚±,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-35,camihara38,å–œå‹åæ¥“æœˆ,ã‚­ãƒ¦ãƒŠãƒ•ãƒ…ã‚­,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,,,1
-36,camihara39,é•·å¶ºç‰æ–—,ãƒŠã‚¬ãƒŸãƒãƒ«ãƒˆ,ç¾é‡Œä¸­å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-37,camihara40,å³¶è¢‹ã„ã¥ã‚‚,ã‚·ãƒãƒ–ã‚¯ãƒ­ã‚¤ãƒ…ãƒ¢,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-38,camihara41,æ± åŸæµç¾ç†,ã‚¤ã‚±ãƒãƒ©ã‚¨ãƒŸãƒª,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-39,camihara42,å®®é‡Œæ–°,ãƒŸãƒ¤ã‚¶ãƒˆã‚¢ãƒ©ã‚¿,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-40,camihara43,å®®é‡Œå·§,ãƒŸãƒ¤ã‚¶ãƒˆã‚¿ã‚¯ãƒŸ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-41,camihara44,ä¸‰æœ¨ã‚ãšã•,ãƒŸã‚­ã‚¢ã‚ºã‚µ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 13:00,,1
-42,camihara45,å¤§åŸå¤§æ¨¹,ã‚ªã‚ªã‚·ãƒ­ãƒ€ã‚¤ã‚¸ãƒ¥,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-43,camihara46,æ¯”å±‹æ ¹ä¸€å¤®,ãƒ’ãƒ¤ãƒã‚¤ã‚ªãƒª,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-44,camihara47,ç…§å±‹å¯¿å¥ˆ,ãƒ†ãƒ«ãƒ¤ã‚¸ãƒ¥ãƒŠ,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-45,camihara48,æ–°é–€æ´‹èŠ¹,ã‚·ãƒ³ãƒ¢ãƒ³ãƒ’ãƒ­ã‚»,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-46,camihara49,é‡‘åŸå„ªæ,ã‚­ãƒ³ã‚¸ãƒ§ã‚¦ãƒ¦ã‚¦ã‚¢,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Friday 17:00,,1
-47,camihara50,é«˜å®®å®ç‰½,ã‚¿ã‚«ãƒŸãƒ¤ãƒ’ãƒ­ãƒˆã‚­,å®®é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-48,camihara51,ä¸­æ‘è¼ä¹Ÿ,ãƒŠã‚«ãƒ ãƒ©ãƒªãƒ¥ã‚¦ãƒ¤,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Wednesday 18:00,,1
-49,camihara52,é‡‘åŸè“®,ã‚­ãƒ³ã‚¸ãƒ§ã‚¦ãƒ¬ãƒ³,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 14:00,,1
-50,camihara53,æ¯”å˜‰è‰¯å¤§,ãƒ’ã‚¬ãƒ¨ã‚·ãƒã‚µ,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-51,camihara54,ä¸ŠåŸå¾³æ¡,ã‚¦ã‚¨ãƒãƒ©ãƒãƒªãƒˆ,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-52,camihara55,è¥¿æ‘æ‹“ç¿”,ãƒ‹ã‚·ãƒ ãƒ©ãƒ’ãƒ­ãƒˆ,é«˜åŸå°å­¦æ ¡,member_face/barbershop.png,Wednesday 18:00,,1
-53,camihara56,è±Šé‡Œæ˜´,ãƒˆãƒ¨ã‚¶ãƒˆã‚¹ãƒãƒ«,åŒ—ç‰å°å­¦æ ¡,member_face/barbershop.png,Saturday 14:00,,1
-54,camihara57,ç”°å³¶è“®,ã‚¿ã‚¸ãƒãƒ¬ãƒ³,ã‚¤ãƒ³ã‚¿ãƒ¼ãƒŠã‚·ãƒ§ãƒŠãƒ«ã‚¹ã‚¯ãƒ¼ãƒ«,member_face/barbershop.png,Tuesday 18:00,,1
-55,camihara58,å·ä¸Šé›„å¤§,ã‚«ãƒ¯ã‚«ãƒŸãƒ¦ã‚¦ã‚¿,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
-56,camihara59,å³¶è¢‹é™½å‹,ã‚·ãƒãƒ–ã‚¯ãƒ­ãƒ’ãƒ¦ã‚¦,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-57,camihara60,å®®é‡Œæ”¿å®—,ãƒŸãƒ¤ã‚¶ãƒˆãƒã‚µãƒ ãƒ,å®®é‡Œä¸­å­¦æ ¡,member_face/barbershop.png,Wednesday 18:00,,1
-58,camihara61,å®®é‡Œå¿ƒå¤,ãƒŸãƒ¤ã‚¶ãƒˆã‚³ãƒŠãƒ„,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Wednesday 18:00,,1
-59,camihara62,å®®é‡Œè’¼,ãƒŸãƒ¤ã‚¶ãƒˆã‚½ã‚¦,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Wednesday 18:00,,1
-60,camihara63,é‡‘åŸä¾†å’Œ,ã‚­ãƒ³ã‚¸ãƒ§ã‚¦ãƒ©ã‚¤ãƒŠ,ç¾é‡Œå°å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-61,camihara64,ä»²å¶ºå‡›éŸ³,ãƒŠã‚«ãƒŸãƒãƒªãƒ³ãƒˆ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Wednesday 17:00,,1
-62,camihara65,å¤§åŸç¿”å¤ª,ã‚ªã‚ªã‚·ãƒ­ã‚·ãƒ§ã‚¦ã‚¿,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 14:00,,1
-63,camihara66,å¤§åŸå’²,ã‚ªã‚ªã‚·ãƒ­ã‚µã‚¯,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 14:00,,1
-64,camihara67,å¤§åº­æ¡œè¼,ã‚ªã‚ªãƒã‚ªã‚¦ã‚­,ä¸­ã®ç”ºå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-65,camihara68,ä¹…ç”°å’Œä½³,ãƒ’ã‚µãƒ€ãƒ›ãƒã‚«,å¿—çœŸå¿—å°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-66,camihara69,ä¹…ç”°æœé™½,ãƒ’ã‚µãƒ€ã‚¢ã‚µãƒ’,å¿—çœŸå¿—å°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-67,camihara70,ä¸­æ ¹æ‚ ä»,ãƒŠã‚«ãƒãƒ¦ã‚¦ã‚¸ãƒ³,è«¸è¦‹å°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-68,camihara71,ä»²çœŸæƒ³è‰¯,ãƒŠã‚«ãƒã‚½ãƒ©,ä¸­ã®ç”ºå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-69,camihara72,å…·å¿—å¹¸æ‰¿,ã‚°ã‚·ãƒ¦ã‚­ãƒ„ã‚°,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Friday 18:00,,1
-70,camihara73,å…¼ä¹…ç‰,ã‚«ãƒã‚¯ãƒªãƒ¥ã‚¦,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 18:00,,1
-71,camihara74,å±±åŸæŸŠçœŸ,ãƒ¤ãƒã‚·ãƒ­ãƒˆã‚¦ãƒ,ä¸­åŸå°å­¦æ ¡,member_face/barbershop.png,Tuesday 17:00,,1
-72,camihara75,å±±åŸéº»è¡£é¦™,ãƒ¤ãƒã‚·ãƒ­ãƒã‚¤ã‚«,å¤©é¡˜å°å­¦æ ¡,member_face/barbershop.png,Saturday 10:00,,1
-73,camihara76,ä¼Šè‰¯æ³¢çµçµ†,ã‚¤ãƒ©ãƒãƒ¦ãƒªãƒŠ,ç¾åŸå°å­¦æ ¡,member_face/barbershop.png,Saturday 11:00,,1
+id,userid,name,katakana,school,school_year,images,studyday_type,published_date,author_id
+1,camihara4,ãŠÔ’qŠì,ƒEƒGƒ}ƒgƒ‚ƒL,”üŒ´¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 10:00,,1
+2,camihara5,‹g‘º—El,ƒˆƒVƒ€ƒ‰ƒ†ƒEƒg,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+3,camihara6,éŠÔ³Æ,ƒVƒƒ}ƒVƒ‡ƒEƒ„,”üŒ´¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Friday 17:00,,1
+4,camihara7,‹àé–©“s,ƒLƒ“ƒWƒ‡ƒEƒ~ƒiƒg,”ü—¢¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+5,camihara8,‰Yè­“¹,ƒEƒ‰ƒTƒLƒ}ƒTƒ~ƒ`,”ü—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+6,camihara9,Œ“‹v®,ƒJƒlƒNƒiƒI,‹{—¢’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Saturday 10:00,,1
+7,camihara10,’†‘º—DŒ,ƒiƒJƒ€ƒ‰ƒ†ƒdƒL,”ü—¢’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Saturday 13:00,,1
+8,camihara11,’†‘º—DˆÇ,ƒiƒJƒ€ƒ‰ƒ†ƒEƒA,”ü—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 13:00,,1
+9,camihara12,RéŒ’‰î,ƒ„ƒ}ƒVƒƒPƒ“ƒXƒP,”ü—¢¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Friday 17:00,,1
+10,camihara13,•x“c~m,ƒgƒ~ƒ^ƒAƒcƒqƒg,‰z—ˆ¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,saturday 11:00,,1
+11,camihara14,•x“c‚³‚­‚ç,ƒgƒ~ƒ^ƒTƒNƒ‰,‰z—ˆ¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 11:00,,1
+12,camihara15,‹VŠÔ”Ü–ƒ—¢,ƒMƒ}ƒqƒ}ƒŠ,‰z—ˆ¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+13,camihara16,‹VŠÔ çt,ƒMƒ}ƒTƒNƒ‰,‹»“ì’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+14,camihara17,VŠ_”üˆ¤,ƒAƒ‰ƒJƒLƒ~ƒA,”ü—¢¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Friday 18:00,,1
+15,camihara18,VŠ_”ü—ˆ,ƒAƒ‰ƒJƒLƒ~ƒN,”ü—¢¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Friday 18:00,,1
+16,camihara19,ŠxŒ´¯—z,ƒIƒJƒnƒ‰ ƒZƒCƒˆƒE,”ü—¢’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Saturday 13:00,,1
+17,camihara20,‘å’ßŠx,ƒIƒIƒcƒ‹ƒKƒN,‰«“êƒAƒ~[ƒNƒXƒCƒ“ƒ^[ƒiƒVƒ‡ƒiƒ‹’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Saturday 11:00,,1
+18,camihara21,‚]FéD¯,ƒ^ƒJƒGƒXƒnƒ„ƒZ,”üŒ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Friday 17:00,,1
+19,camihara22,‹Êé•®,ƒ^ƒ}ƒLƒ^ƒPƒiƒI,‰Ãè”[¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Saturday 13:00,,1
+20,camihara23,ˆÀ—¢À‰HŠ,ƒAƒTƒgƒ~ƒEƒg,”üŒ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+21,camihara24,•½Œb‘¾˜Y,ƒ^ƒCƒ‰ƒPƒCƒ^ƒƒE,”ü—¢¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Friday 17:00,,1
+22,camihara25,‚—Ç·—®,ƒ^ƒJƒ‰ƒZƒ‹,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 11:00,,1
+23,camihara26,“cê—zŒü,ƒ^ƒoƒqƒiƒ^,’†Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+24,camihara27,K’nœ‰·,ƒRƒEƒ`ƒVƒIƒ“,”ü—¢¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Saturday 10:00,,1
+25,camihara28,K’nìˆ¤,ƒRƒEƒ`ƒVƒ…ƒi,”ü—¢¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Saturday 10:00,,1
+26,camihara29,ˆÉ²—I‰Ä,ƒCƒTƒ†ƒEƒJ,‹{—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+27,camihara30,ˆÉ²çH,ƒCƒTƒ`ƒAƒL,‹{—¢¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+28,camihara31,”ä‰®ªL‘å,ƒqƒ„ƒlƒRƒEƒ_ƒC,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+29,camihara32,ˆ¾‘—D”Ü,ƒAƒOƒjƒ†ƒEƒL,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+30,camihara33,ácáÁ—L‹M,ƒgƒEƒ}ƒ†ƒEƒL,”üŒ´¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Friday 17:00,,1
+31,camihara34,ácáÁ‘å‹M,ƒgƒEƒ}ƒ_ƒCƒL,”üŒ´¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Friday 17:00,,1
+32,camihara35,éŠÔ—y‰¹,ƒVƒƒ}ƒnƒ‹ƒg,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 11:00,,1
+33,camihara36,•½—I“Ş,ƒ^ƒCƒ‰ƒ†ƒi,”ü—¢¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+34,camihara37,‹àéê£ƒm•,ƒLƒ“ƒWƒ‡ƒEƒŠƒ“ƒmƒXƒP,”üŒ´¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 11:00,,1
+35,camihara38,Šì—F–¼•–Œ,ƒLƒ†ƒiƒtƒdƒL,‹{—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,,,1
+36,camihara39,’·—ä—®“l,ƒiƒKƒ~ƒlƒ‹ƒg,”ü—¢’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+37,camihara40,“‡‘Ü‚¢‚Ã‚à,ƒVƒ}ƒuƒNƒƒCƒdƒ‚,’†Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 13:00,,1
+38,camihara41,’rŒ´Œb”ü—,ƒCƒPƒnƒ‰ƒGƒ~ƒŠ,”ü—¢¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 10:00,,1
+39,camihara42,‹{—¢V,ƒ~ƒ„ƒUƒgƒAƒ‰ƒ^,”üŒ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Friday 18:00,,1
+40,camihara43,‹{—¢I,ƒ~ƒ„ƒUƒgƒ^ƒNƒ~,”üŒ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Friday 18:00,,1
+41,camihara44,O–Ø‚ ‚¸‚³,ƒ~ƒLƒAƒYƒT,”üŒ´¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 13:00,,1
+42,camihara45,‘åé‘å÷,ƒIƒIƒVƒƒ_ƒCƒWƒ…,‹{—¢¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Saturday 10:00,,1
+43,camihara46,”ä‰®ªˆê‰›,ƒqƒ„ƒlƒCƒIƒŠ,‹{—¢¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Friday 17:00,,1
+44,camihara47,Æ‰®õ“Ş,ƒeƒ‹ƒ„ƒWƒ…ƒi,‹{—¢¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+45,camihara48,V–å—m‹Ú,ƒVƒ“ƒ‚ƒ“ƒqƒƒZ,’†Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 11:00,,1
+46,camihara49,‹àé—DˆÇ,ƒLƒ“ƒWƒ‡ƒEƒ†ƒEƒA,”ü—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Friday 17:00,,1
+47,camihara50,‚‹{GŒ¡,ƒ^ƒJƒ~ƒ„ƒqƒƒgƒL,‹{—¢¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Saturday 10:00,,1
+48,camihara51,’†‘º‹P–ç,ƒiƒJƒ€ƒ‰ƒŠƒ…ƒEƒ„,’†Œ´¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Wednesday 18:00,,1
+49,camihara52,‹àé˜@,ƒLƒ“ƒWƒ‡ƒEƒŒƒ“,’†Œ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Saturday 14:00,,1
+50,camihara53,”ä‰Ã—Ç‘å,ƒqƒKƒˆƒVƒ}ƒT,’†Œ´¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+51,camihara54,ãŒ´“¿‹Ë,ƒEƒGƒnƒ‰ƒmƒŠƒg,’†Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Friday 18:00,,1
+52,camihara55,¼‘º‘ñãÄ,ƒjƒVƒ€ƒ‰ƒqƒƒg,‚Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Wednesday 18:00,,1
+53,camihara56,–L—¢ã,ƒgƒˆƒUƒgƒXƒoƒ‹,–k‹Ê¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 14:00,,1
+54,camihara57,“c“‡˜@,ƒ^ƒWƒ}ƒŒƒ“,ƒCƒ“ƒ^[ƒiƒVƒ‡ƒiƒ‹ƒXƒN[ƒ‹,¬Šw1”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+55,camihara58,ìã—Y‘å,ƒJƒƒJƒ~ƒ†ƒEƒ^,”ü—¢¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Saturday 11:00,,1
+56,camihara59,“‡‘Ü—z—F,ƒVƒ}ƒuƒNƒƒqƒ†ƒE,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+57,camihara60,‹{—¢­@,ƒ~ƒ„ƒUƒgƒ}ƒTƒ€ƒl,‹{—¢’†ŠwZ,’†Šw1”N¶,member_face/barbershop.png,Wednesday 18:00,,1
+58,camihara61,‹{—¢S‰Ä,ƒ~ƒ„ƒUƒgƒRƒiƒc,”ü—¢¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Wednesday 18:00,,1
+59,camihara62,‹{—¢‘“,ƒ~ƒ„ƒUƒgƒ\ƒE,”ü—¢¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Wednesday 18:00,,1
+60,camihara63,‹àé˜Ò˜a,ƒLƒ“ƒWƒ‡ƒEƒ‰ƒCƒi,”ü—¢¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+61,camihara64,’‡—ä™z‰¹,ƒiƒJƒ~ƒlƒŠƒ“ƒg,”üŒ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Wednesday 17:00,,1
+62,camihara65,‘åéãÄ‘¾,ƒIƒIƒVƒƒVƒ‡ƒEƒ^,’†Œ´¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 14:00,,1
+63,camihara66,‘åéç,ƒIƒIƒVƒƒTƒN,’†Œ´¬ŠwZ,¬Šw2”N¶,member_face/barbershop.png,Saturday 14:00,,1
+64,camihara67,‘å’ë÷‹P,ƒIƒIƒoƒIƒEƒL,’†‚Ì’¬¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+65,camihara68,‹v“c˜a‰À,ƒqƒTƒ_ƒzƒmƒJ,u^u¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Saturday 10:00,,1
+66,camihara69,‹v“c’©—z,ƒqƒTƒ_ƒAƒTƒq,u^u¬ŠwZ,¬Šw5”N¶,member_face/barbershop.png,Saturday 10:00,,1
+67,camihara70,’†ª—Im,ƒiƒJƒlƒ†ƒEƒWƒ“,”Œ©¬ŠwZ,¬Šw4”N¶,member_face/barbershop.png,Saturday 10:00,,1
+68,camihara71,’‡^‘z—Ç,ƒiƒJƒ}ƒ\ƒ‰,’†‚Ì’¬¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+69,camihara72,‹ïuK³,ƒOƒVƒ†ƒLƒcƒO,’†Œ´¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Friday 18:00,,1
+70,camihara73,Œ“‹v—®,ƒJƒlƒNƒŠƒ…ƒE,”üŒ´¬ŠwZ,¬Šw1”N¶,member_face/barbershop.png,Tuesday 18:00,,1
+71,camihara74,Ré•A^,ƒ„ƒ}ƒVƒƒgƒEƒ},’†Œ´¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Tuesday 17:00,,1
+72,camihara75,Ré–ƒˆß,ƒ„ƒ}ƒVƒƒ}ƒCƒJ,“VŠè¬ŠwZ,¬Šw6”N¶,member_face/barbershop.png,Saturday 10:00,,1
+73,camihara76,ˆÉ—Ç”gŒ‹ãJ,ƒCƒ‰ƒnƒ†ƒŠƒi,”üŒ´¬ŠwZ,¬Šw3”N¶,member_face/barbershop.png,Saturday 11:00,,1
