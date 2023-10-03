@@ -148,7 +148,7 @@ def post_list(request):
             Q(katakana__icontains=search_query) # カタカナで部分一致
         )
         if not posts:
-            error = "誰も居ませんでした"
+            error = "<img src='../static/image/work/noting.png' width='50%'>"
         
     elif search_query and not selected_studyday_type:
         posts = posts.filter(
@@ -157,7 +157,7 @@ def post_list(request):
             Q(katakana__icontains=search_query) # カタカナで部分一致
         )
         if not posts:
-            error = "誰も居ませんでした"
+            error = "<img src='../static/image/work/noting.png' width='50%'>"
     
     elif not search_query and selected_studyday_type:
         posts = sorted_posts
@@ -165,7 +165,7 @@ def post_list(request):
         search_query = ""
 
         if not posts:
-            error = "誰も居ませんでした"
+            error = "<img src='../static/image/work/noting.png' width='50%'>"
 
     else:
         search_query = ""

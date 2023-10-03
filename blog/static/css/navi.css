@@ -4,24 +4,45 @@
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgb(141, 238, 44);
+  background-color: rgb(183, 254, 112);
   padding-top: 5px;
   box-sizing: border-box;
 }
 
 .navies ul {
   display: flex;
+  justify-content: space-around; /* 要素を均等に配置 */
+  padding: 0; /* リストの内側の余白を削除 */
 }
+
 .navies li {
   list-style: none;
-} 
-.navies a{
+  padding: 10px 0; /* 上下の余白を追加 */
+  flex: 1; /* 要素を均等に広げる */
+  text-align: center; /* テキストを中央に配置 */
+  transition: transform 0.3s; /* マウスオーバー時のアニメーション */
+  border: 5px solid #128b05; /* 枠を追加 */
+  margin: 0 5px; /* 要素間の外側の余白を追加 */
+}
+
+.navies li:first-child {
+  margin-left: 0; /* 最初の要素の左側の余白を削除 */
+}
+
+.navies li:last-child {
+  margin-right: 0; /* 最後の要素の右側の余白を削除 */
+}
+
+.navies a {
   display: block;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  margin-right: 35px;
+  color: rgb(8, 19, 93);
+}
+
+.navies li:hover {
+  transform: scale(1.1); /* マウスオーバー時に要素を拡大 */
 }
 
 .navies a:hover {
-  color: rgb(239, 241, 192);
+  color: rgb(121, 159, 190);
 }
