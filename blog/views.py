@@ -96,7 +96,7 @@ class  AccountRegistration(TemplateView):
         return render(request,"login.html",context=self.params)
 
 # ↓は通常の画面   
-@login_required
+# @login_required
 def post_list(request):
 
     posts = Post.objects.all()

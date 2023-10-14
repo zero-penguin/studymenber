@@ -21,9 +21,34 @@
   flex: 1; /* 要素を均等に広げる */
   text-align: center; /* テキストを中央に配置 */
   transition: transform 0.3s; /* マウスオーバー時のアニメーション */
-  border: 5px solid #128b05; /* 枠を追加 */
+  box-shadow: 0 0 0 5px #128b05; /* ボーダーの代わりにボックスシャドウを追加 */
   margin: 0 5px; /* 要素間の外側の余白を追加 */
+  flex-basis: calc(20% - 10px); /* 固定の幅を指定（要素間の余白を考慮） */
 }
+
+/* モバイル用のスタイル */
+@media (max-width: 1000px) {
+  .navies {
+    height: auto; /* ナビゲーションバーの高さを自動調整 */
+    padding-top: 0; /* 不要な上部の余白を削除 */
+  }
+
+  .navies ul {
+    align-items: center; /* メニュー項目を中央に配置 */
+  }
+
+  .navies li {
+    padding: 5px 0; /* 上下の余白を小さくする */
+    border: none; /* ボーダーを削除 */
+    margin: 5px 0; /* 要素間の余白を追加 */
+  }
+
+  .navies a {
+    font-size: 9px; /* 文字サイズを小さくする */
+  }
+}
+
+
 
 .navies li:first-child {
   margin-left: 0; /* 最初の要素の左側の余白を削除 */
@@ -37,6 +62,8 @@
   display: block;
   text-decoration: none;
   color: rgb(8, 19, 93);
+  font-size: 12px;
+
 }
 
 .navies li:hover {
