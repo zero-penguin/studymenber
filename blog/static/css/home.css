@@ -49,6 +49,14 @@ body {
   transition: opacity 1s ease-in-out;
 } */ 
 
+.teacher_name{
+  color: #0070c0; /* 青に対して映える色合い（例えば、青色） */
+  font-size: 36px; /* テキストのフォントサイズ */
+  font-weight: bold; /* テキストの太さ */
+  font-family: Arial, sans-serif; /* フォントファミリー */
+  text-shadow: 2px 2px 4px #ccc; /* テキストに影を追加 */
+}
+
 .post-container-wrapper {
   display: flex; /* Flexboxを適用 */
   overflow-x: auto; /* 横方向のスクロールを有効にする */

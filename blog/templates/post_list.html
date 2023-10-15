@@ -9,8 +9,17 @@
 
 </div>
 
-<!-- 先生用のページの表示 -->
-{% if request.user.username == "camiharakou1" or "camiharakou2" or "camiharakou3" or "camiharakou2" %}
+<!-- 先生用のページの表示 camiharakou1~20-->
+{% if request.user.username == "camiharakou1" or "camiharakou2" or "camiharakou3" or "camiharakou4" or "camiharakou5" or "camiharakou6" or "camiharakou7" or "camiharakou8" or "camiharakou9" or "camiharakou10" or "camiharakou11" or "camiharakou12" or "camiharakou13" or "camiharakou14" or "camiharakou15" or "camiharakou16" or "camiharakou17" or "camiharakou18" or "camiharakou19" or "camiharakou20"%}
+
+{% for post in teacher_name %}
+  {% if post.id == request.user.id %}
+  <div class="teacher_name">{{post.last_name}}先生、お疲れ様！！</div>
+  {% endif %}
+{% endfor %}
+
+<div class="air2">
+</div>
 
   <!-- トップバーの開始 -->
   <div class="navies">  

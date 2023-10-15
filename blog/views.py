@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Comment
+from .models import Post, Comment, Account, User
 from django.utils import timezone
 from datetime import timedelta
 from django.db.models import Q
@@ -103,8 +103,9 @@ def post_list(request):
     comments = Comment.objects.all().order_by('-id')
     error = ""
     user = request.user.username
-    print(user)
     user_profile = Post.objects.filter(userid=user)
+    teacher_name = User.objects.all()
+    print(request.user.id)
     sorted_posts = []
     sort_by = request.GET.get('sort_by', 'studyday_type')
     selected_studyday_type = request.GET.get('studyday_type_filter', '')  # 選択された学習日タイプを取得
@@ -172,9 +173,8 @@ def post_list(request):
 
         if not posts:
             # home画面の画像
-            error = "<img src='../static/image/work/attention.png' width='80%'>"
-
-    
+            error = """<video autoplay loop id="myVideo" width="70%"><source src="../static/video/appusevideo.mp4" type="video/mp4">Your browser does not support the video tag.</video>"""
+        
     
 
     return render(request, 'post_list.html', {
@@ -186,6 +186,7 @@ def post_list(request):
         'comments':comments,
         'current_time': current_time,  # 現在の日時をコンテキストに追加
         'user_profile': user_profile, #　生徒用のPost取得用
+        'teacher_name':teacher_name
         })
 
 @login_required
