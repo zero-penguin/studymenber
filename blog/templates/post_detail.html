@@ -14,7 +14,7 @@
       </div>
     {% endif %}
     {% if post.images %}
-        <p><img src="{{ post.images.url }}"height="200px" width="auto"></p>
+        <p class="detail_image"><img src="{{ post.images.url }}"height="50%" width="auto"></p>
     {% endif %}
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     <h2 class="d-name">{{ post.name }}</h2>

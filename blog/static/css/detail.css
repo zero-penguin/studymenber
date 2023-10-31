@@ -34,9 +34,10 @@
 }
 
 /* 画像のスタイル */
-img {
+.detail_image img {
   max-width: 100%;
-  height: auto;
+  height: 50%;
+  width: 50%;
 }
 
 /* グリフィコンのスタイル */
