@@ -216,6 +216,7 @@ backurl = []  # 空のリストを作成
 @login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    user = get_object_or_404(User, pk=request.user.id)
 
     # request.META.get() で取得した値をリストに追加
     backurl.append(request.META.get('HTTP_REFERER', 'post_list'))
@@ -243,11 +244,13 @@ def post_edit(request, pk):
             comment = form.save(commit=False)
             comment.post = post  # Postモデルと関連付け
             comment.published_date = timezone.now()
+            # ログインユーザー名をフォームに自動的に設定
+            comment.author = user  # ログインユーザーを設定
             comment.save()
             
             return redirect(largest_odd_url)
     else:
-        form = CommentForm()
+        form = CommentForm(initial={'author': request.user.username})
     return render(request, 'post_edit.html', {'form': form})
 
 # コメントの削除ボタン

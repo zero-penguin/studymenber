@@ -26,13 +26,14 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         # 最新のコメント　編集可能に
-        fields = ('author', 'content','savepoint','stage')
+        fields = ('stage','savepoint','content',)
         exclude = ('post',)
         labels= {
             'content':''
         }
 
         widgets = {
+            'author': forms.HiddenInput(),  # authorフィールドを非表示に
             'content': forms.Textarea(attrs={'class': 'rich-textarea', 'maxlength': '100'})
         }
         

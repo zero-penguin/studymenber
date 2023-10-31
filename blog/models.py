@@ -47,6 +47,7 @@ class Post(models.Model):
         ('Saturday 14:00', 'Saturday 14:00'),
         ]
     )
+
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
