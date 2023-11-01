@@ -26,7 +26,7 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         # 最新のコメント　編集可能に
-        fields = ('stage','savepoint','content',)
+        fields = ('stage','content','savepoint',)
         exclude = ('post',)
         labels= {
             'content':''
